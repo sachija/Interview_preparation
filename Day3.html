@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+   <h2>what is promises? </h2> 
+   <p> callback hell makes our code look haphazard and makes it hard to understand.
+    We should always try to avoid using multiple Callbacks to end up falling into callback hell.
+    We use Promises to prevent using Callbacks and thereby avoiding Callback Hell.Promises - Promises are used to handle asynchronous operations in JavaScript. They are easy to manage 
+    when dealing with multiple asynchronous operations where callbacks can create callback hell leading to 
+     unmanageable code. It also allows us to make API calls or fetch data from Web Servers successfully. If not 
+    able to do so fetches us with an error message.
+    It have three stages.
+    1. Pending               2. Resolved(fulfilled)          3. Rejected.</p>
+
+    <h2>what is the hoisting ?</h2>
+    <p>Hoisting is JavaScript's default behavior of moving declarations to the top.
+        hoisting is only possible for var and not for const and let
+        a variable can be used before it has been declared.</p>
+
+    <h2>what is the purpose of async and await keyword ?</h2>
+        <p>The word “async” before a function means one simple thing: a function always returns a promise.
+            The keyword await makes JavaScript wait until that promise settles and returns its result.
+     
+    <h2>what is DOM ?</h2>
+    The HTML DOM is a standard object model and programming interface for HTML. It defines:
+    The HTML elements as objects
+    The properties of all HTML elements
+    The methods to access all HTML elements
+    The events for all HTML elements
+
+    With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+    JavaScript can change all the HTML elements in the page
+    JavaScript can change all the HTML attributes in the page
+    JavaScript can change all the CSS styles in the page
+    JavaScript can remove existing HTML elements and attributes
+    JavaScript can add new HTML elements and attributes
+    JavaScript can react to all existing HTML events in the page
+    JavaScript can create new HTML events in the page
+
+        </p>
+    <h2>what is the difference between undefined,not defined and NaN ?</h2>
+        <P> undefined - when we try to access a variable that is declared but not initialized for var keywords.
+            null - Its a value that we initialize to a variable which will later be replaced with some other/true value
+            not defined - when we try to access a variable that is not declared.</P>
+
+    <H2>what are the operators in javascript</H2>
+            <p>
+                Arithmetic Operators
+                Comparison Operators
+                Logical Operators
+                Assignment Operators
+                Ternary Operators
+            </p>
+    <h2>what is callback hell</h2>
+            <p>Callback Hell: Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code.</p>
+  <h2>what is arrow function</h2>
+  <p>Arrow functions were introduced in ES6.
+     Arrow functions allow us to write shorter function syntax:</p>
+     let Myfun(a,b)=>a*b;
+
+    <h2>example of async await</h2>
+     async function sequentialStart() {
+        console.log("==SEQUENTIAL START==");
+      
+        // 1. Execution gets here almost instantly
+        const slow = await resolveAfter2Seconds();
+        console.log(slow); // 2. this runs 2 seconds after 1.
+      
+        const fast = await resolveAfter1Second();
+        console.log(fast); // 3. this runs 3 seconds after 1.
+      }
+      
+      
+      <script src="./Day3.js"></script>
+</body>
+</html>
